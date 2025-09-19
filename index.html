@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Command Docs</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Make the bear logo look neat */
+    .logo-img {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 6px 26px rgba(106, 13, 173, 0.28);
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <!-- Bear logo image -->
+        <img src="bear.png" alt="Rift Logo" class="logo-img" />
+        <div>
+          <div class="site-title">RIFT Commands</div>
+          <div class="site-sub">v0.1</div>
+        </div>
+      </div>
+
+      <nav class="top-actions">
+        <a 
+          class="primary-btn" 
+          href="https://discord.com/oauth2/authorize?client_id=1414249331531321437&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Flocalhost%3A1500%2Fapi%2Fauth%2Fdiscord%2Fredirect&integration_type=0&scope=bot+email+identify+guilds.join" 
+          target="_blank"
+        >
+          Invite Bot
+        </a>
+        <a 
+          class="ghost-btn" 
+          href="https://discord.gg/nwv4vZBu8G" 
+          target="_blank"
+        >
+          Join Server
+        </a>
+      </nav>
+    </div>
+
+    <div class="search-row">
+      <input id="search" placeholder="Search commands..." />
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="filters">
+      <div id="pills" class="pills">
+        <!-- pills injected by JS -->
+      </div>
+    </section>
+
+    <section id="grid" class="cards-grid" aria-live="polite">
+      <!-- cards injected by JS -->
+    </section>
+
+    <footer class="footer">
+      <small>Made with ♥ — Command docs</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
